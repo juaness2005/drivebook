@@ -1,0 +1,22 @@
+.capitulo {
+    display: flex;
+    flex-direction: column;  /* Mantém os elementos empilhados verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;      /* Centraliza horizontalmente */
+    height: 20vh;           /* Ocupa toda a altura da tela */
+    text-align: center;      /* Alinha o texto no centro */
+    gap: 5px;               /* Reduz o espaçamento entre os elementos */
+  }
+  
+  .capitulo h3 {
+    font-size: 1.8rem;  /* Tamanho ajustado para não ficar muito grande */
+    font-weight: bold;  /* Deixa o texto em negrito */
+    color: white;       /* Define a cor branca */
+    margin: 0;         /* Remove margens extras */
+  }
+  
+  .capitulo h5 {
+    font-size: 1rem;  /* Tamanho um pouco menor */
+    color: white;     /* Cor branca */
+    margin: 0;        /* Remove margens extras */
+  }

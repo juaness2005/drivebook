@@ -1,0 +1,176 @@
+/* Estilo geral para o contêiner */
+.container {
+    max-width: 100%; /* Garante que o contêiner ocupe a largura total */
+    width: 90%; /* Ajusta largura para dispositivos menores */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 6px 4px 4px 6px rgba(0, 0, 0, 0.692);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+/* Estilo para texto e imagem lado a lado */
+.texto-e-imagem {
+    display: flex; /* Mantém os elementos lado a lado */
+    gap: 15px; /* Espaçamento entre o texto e a imagem */
+    align-items: flex-start; /* Alinha os itens pelo topo */
+    flex-wrap: nowrap; /* Impede quebra de linha */
+}
+
+.texto {
+    flex: 1; /* Faz o texto ocupar o restante do espaço disponível */
+    text-align: justify; /* Justifica o texto */
+}
+
+.image {
+    flex: 0 0 150px; /* Define um tamanho fixo para a imagem */
+    max-width: 150px; /* Garante que a imagem não ultrapasse esse tamanho */
+}
+
+.imagem img {
+    width: 100%; /* A imagem ocupa toda a largura do contêiner definido */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+h2 {
+    color: white;
+    font-weight: bold;
+    font-family: Karrilee, sans-serif;
+}
+
+p {
+    color: white;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .texto-e-imagem {
+        flex-direction: column; /* Empilha imagem e texto verticalmente */
+        align-items: center; /* Centraliza elementos */
+        text-align: center;
+    }
+
+    .imagem {
+        max-width: 120px;
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Ajusta tamanho do título */
+    }
+
+    p {
+        font-size: 1rem; /* Ajusta tamanho do texto */
+    }
+
+    .botao-container {
+        display: flex;
+        flex-wrap: wrap; /* Permite quebra de linha */
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .botao {
+        flex: 1 1 calc(50% - 10px);
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+/* Responsividade para dispositivos menores (celulares) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 80px;
+    }
+
+    .texto-e-imagem {
+        gap: 10px;
+    }
+
+    .imagem {
+        max-width: 100px; /* Reduz tamanho da imagem */
+    }
+
+    h2 {
+        font-size: 1rem; /* Reduz tamanho do título */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reduz tamanho do texto */
+    }
+
+    .botao-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Botões em uma única coluna */
+        gap: 8px;
+    }
+
+    .botao {
+        padding: 8px;
+    }
+}
+
+
+/* Estilo para caixas interativas */
+.caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    border: 1px solid #500202;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.692);
+}
+
+.caixa:hover {
+    transform: scale(1.05);
+    background-color: transparent;
+    border-color: gold;
+    box-shadow: 0 4px 6px gold;
+}
+
+.caixa .imagem {
+    width: 120px;
+    height: 170px;
+    object-fit: contain;
+}
+
+/* Botões */
+.botao-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.botao {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+.botao-texto {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    width: 100%;
+}

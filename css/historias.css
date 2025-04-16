@@ -1,0 +1,150 @@
+body{
+  background-color: #500202;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #500202;
+    border-radius: 8px;
+    box-shadow:  2px 4px 6px rgba(0, 0, 0, 0.692);
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  .container p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    color: white;
+  }
+
+  .container h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+
+  .container h4 {
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+
+ .titulo  {
+  text-align: center;
+ }
+
+
+
+ .texto-italico {
+  font-style: italic;
+  text-align: left;
+ }
+
+ .container {
+  text-align: left;
+ }
+
+ .btn-home {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #ab0000; /* Cor do botão */
+  text-decoration: none;
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.btn-home:hover {
+  background-color: gold; /* Cor ao passar o mouse */
+}
+
+/* Estilo geral do contêiner */
+.container {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Estilo dos títulos */
+.container h1, .container h4 {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Estilo do menu */
+#navmenu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Estilo dos itens da lista */
+#navmenu ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navmenu ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #ab0000;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+#navmenu ul li a:hover {
+  background-color: gold;
+}
+
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 999999;
+  background-color: #ab0000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: whitesmoke;
+  line-height: 0;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.scroll-top:hover {
+  background: #500202;
+}
+
+.scroll-top:hover i {
+  color: white;
+}
+.mensagem{
+  text-align: right;
+  font-weight: bold;
+  font-style: italic;
+}
+
+  
